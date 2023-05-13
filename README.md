@@ -1,54 +1,97 @@
-# CodeIgniter 4 Framework
+# Penjelasan dari langkah-langkah praktikum (PHP Framework)
 
-## What is CodeIgniter?
+### 1. Mengaktifkan ekstentsi :
+• php-json ekstension untuk bekerja dengan JSON;
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+• php-mysqlnd native driver untuk MySQL;
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+• php-xml ekstension untuk bekerja dengan XML;
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+• php-intl ekstensi untuk membuat aplikasi multibahasa;
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+• libcurl (opsional), jika ingin pakai Curl.
 
-## Important Change with index.php
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+#### Cara mengaktifkannya melalui XAMPP Control Panel, pada bagian Apache klik Config-> PHP.ini
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+<img width="532" alt="image" src="https://github.com/indahles56/Lab7Web/assets/127643042/0d192f43-3471-4e1e-8200-41feaa20faac">
 
-**Please** read the user guide for a better explanation of how CI4 works!
 
-## Repository Management
+#### Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+<img width="610" alt="image" src="https://github.com/indahles56/Lab7Web/assets/127643042/2717e850-58d2-421d-8fa4-5ede640c2fde">
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
 
-## Contributing
+### 2. Melakukan instalasi Codeigniter 4
 
-We welcome contributions from the community.
+#### Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara manual dan menggunakan composer.
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/2285a934-54e6-4387-a2d5-4100699b47cd)
 
-## Server Requirements
+#### Extrak file zip Codeigniter ke direktori htdocs/lab11_ci dan ubah nama direktory framework-4.x.xx menjadi ci4.
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+<img width="478" alt="image" src="https://github.com/indahles56/Lab7Web/assets/127643042/4ec82029-97b5-4d03-9be1-beba9c40643b">
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+#### Buka browser dengan alamat http://localhost/lab11_ci/ci4/public/
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/297d22a9-d7a7-4854-9d4b-9c7bc975309b)
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+### 3. Menjalankan CLI (Command Line Interface)
+Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk mengakses CLI buka terminal/command prompt.
+Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah:
+
+<img width="455" alt="image" src="https://github.com/indahles56/Lab7Web/assets/127643042/4d53859d-d679-4653-9130-6c2e38e74b51">
+
+
+### 4. Mengaktifkan Mode Debugging
+Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program. Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan pesan kesalahan seperti berikut.
+
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/5eeb1227-e097-4793-8e52-f60069599271)
+
+#### Mengaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRINMENT menjadi development untuk memudahkan mengetahui jenis errornya.
+
+#### Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable CI_ENVIRINMENT menjadi development.
+
+<img width="676" alt="image" src="https://github.com/indahles56/Lab7Web/assets/127643042/3885ce4d-dd21-48ab-896c-6fee17052136">
+
+
+### 5. Contoh error yang terjadi pada file app/Controller/Home.php jika menghilangkan titik koma pada akhir kode.
+
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/8cccb9de-e8f9-43fc-af1f-c21555b1c88b)
+
+
+### 6. Membuat Route Baru
+Routing merupakan proses yang mengatur arah atau rute dari request untuk menentukan fungsi/bagian mana yang akan memproses request tersebut. Pada framework CI4, routing bertujuan untuk menentukan Controller mana yang harus merespon sebuah request.
+
+#### Menambahkan kode berikut pada Routes.php
+
+<img width="283" alt="image" src="https://github.com/indahles56/Lab7Web/assets/127643042/0e87ea54-40ae-4d6a-b1a3-59dcb3e19f8e">
+
+#### Cara untuk mengetahui route yang ditambahkan sudah benar dengan buka CLI dan jalankan perintah "php spark routes"
+
+<img width="675" alt="image" src="https://github.com/indahles56/Lab7Web/assets/127643042/66a97f58-aff0-4f2b-a792-a45a832451f0">
+
+#### Akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
+
+
+### 7. Membuat Controller
+Controller adalah class atau script yang bertanggung jawab merespon sebuah request.
+
+#### Buat file baru dengan nama page.php pada direktori Controller
+
+#### Selanjutnya refresh Kembali browser, maka akan ditampilkan hasilnya yaotu halaman sudah dapat diakses.
+
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/7e8ce502-e2c1-4a3b-b142-c499c57c0062)
+
+
+### 8. Membuat Layout Web dengan CSS
+
+#### Buat file css pada direktori public dengan nama style.css
+
+#### Kemudian buat folder template pada direktori view kemudian buat file header.php dan footer.php
+
+#### Selanjutnya mengakses alamat url http://localhost:8080/home dan akan muncul tampilan seperti berikut
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/1e37abba-5193-4ad8-8248-b5a7779f1240)
+
+
