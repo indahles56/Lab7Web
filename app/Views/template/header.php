@@ -10,9 +10,10 @@
 </head>
 
 <body>
+    
     <div id="container">
         <header>
-            <h1>Layout sederhana</h1>
+            <h1>Portal Berita</h1>
         </header>
         <nav>
             <a href="<?= base_url('/'); ?>" class="active">Home</a>

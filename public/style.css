@@ -23,7 +23,7 @@ header {
 
 nav {
     display: flex;
-    background-color: #4784f4;
+    background-color: #0c41a3;
     color: #fff;
 }
 
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a.active {
-    background-color: #0c41a3;
+    background-color: #4784f4;
 }
 
 
