@@ -131,13 +131,37 @@ Yang akan menampilkan seperti ini :
 
 
 ### 12. Membuat Tampilan Login
-Membuat codingan tampilan login pada vscode. Kemudian untuk menampilkan tampilan login dengan cara mengakses url http://localhost:8080/user/login .
+
+#### Membuat Tabel USer
+Dengan cara membuat tabel pada MYSQL.
+
+#### Membuat Model User
+Dengan cara membuat file baru pada direktori app/Models dengan nama UserModel.php .
+
+#### Membuat Controller User
+Dengan cara membuat file baru dengan nama User.php pada direktori app/Controllers. Dan menambahkan method index() untuk menampilkan daftar user, dan method login() untuk proses login.
+
+#### Membuat View Login
+Dengan cara membuat file baru dengan nama login.php pada direktori app/views.
+
+#### Membuat Database Seeder
+Dengan cara menulis perintah :
+php spark make:seeder UserSeeder
+pada terminal.
+
+#### Uji Coba Login
+Untuk menampilkan tampilan login dengan cara mengakses url http://localhost:8080/user/login .
 Yang akan menamilkan seperti ini :
 
 ![image](https://github.com/indahles56/Lab7Web/assets/127643042/307361f1-f843-48a0-aead-bc19eec75896)
 
+#### Menambahkan Auth Filter
+Dengan cara membuat file baru dengan nama Auth.php pada direktori app/Filters.
+Kemudian menambahkabn kode :
+'auth' => App\Filters\Auth::class
+pada file app/Config/Filters.php .
 
-### 13. Percobaan Akses Menu Admin
+#### Percobaan Akses Menu Admin
 Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka, akan dimuculkan halaman login. 
 Yang akan menampilkan seperti ini :
 
