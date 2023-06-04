@@ -95,3 +95,41 @@ Controller adalah class atau script yang bertanggung jawab merespon sebuah reque
 ![image](https://github.com/indahles56/Lab7Web/assets/127643042/1e37abba-5193-4ad8-8248-b5a7779f1240)
 
 
+### 8. Membuat View 
+#### Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat file baru dengan nama index.php.
+Yang akan menampilkan seperti ini :
+
+![Screenshot (576)](https://github.com/indahles56/Lab7Web/assets/127643042/fce57a15-79de-4319-8bf6-84dd79889f28)
+
+
+#### Menambahkan beberapa data pada database agar dapat ditampilkan datanya.
+
+![Screenshot (578)](https://github.com/indahles56/Lab7Web/assets/127643042/989ad996-51ab-444d-ac22-86fd4a09c56d)
+
+
+#### Membuat Routing untuk artikel detail
+
+![Screenshot (577)](https://github.com/indahles56/Lab7Web/assets/127643042/89a95976-e02f-4d16-94c4-943b932b2b71)
+
+
+### 9. Membuat Menu Admin
+Menu admin adalah untuk proses CRUD data artikel. Yang akan menampilkan seperti ini :
+
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/dfc1349c-475c-4d12-b7df-472c032e74a9)
+
+
+### 10. Menambah Data Artikel
+Yang akan menampilkan seperti ini :
+
+![Screenshot (582)](https://github.com/indahles56/Lab7Web/assets/127643042/08e02987-7713-489c-89a5-182fa1118fcf)
+
+
+### 11. Mengubah Data
+Yang akan menampilkan seperti ini :
+
+![Screenshot (583)](https://github.com/indahles56/Lab7Web/assets/127643042/c30d02a2-0888-4a96-821a-34e4d3d64f41)
+
+
+
+
+
