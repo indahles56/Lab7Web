@@ -130,6 +130,19 @@ Yang akan menampilkan seperti ini :
 ![Screenshot (583)](https://github.com/indahles56/Lab7Web/assets/127643042/c30d02a2-0888-4a96-821a-34e4d3d64f41)
 
 
+### 12. Membuat Tampilan Login
+Membuat codingan tampilan login pada vscode. Kemudian untuk menampilkan tampilan login dengan cara mengakses url http://localhost:8080/user/login .
+Yang akan menamilkan seperti ini :
+
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/307361f1-f843-48a0-aead-bc19eec75896)
+
+
+### 13. Percobaan Akses Menu Admin
+Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka, akan dimuculkan halaman login. 
+Yang akan menampilkan seperti ini :
+
+![image](https://github.com/indahles56/Lab7Web/assets/127643042/c1e3670c-6175-4dcc-a343-2d8c72be9ab0)
+
 
 
 
