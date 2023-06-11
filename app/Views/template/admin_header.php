@@ -12,7 +12,7 @@
 <body>
     <style>
         table {
-            width: 100%;
+            width: 80%;
             border-collapse: collapse;
         }
 
@@ -112,7 +112,7 @@
         <header>
             <h1>Admin Portal Berita</h1>
         </header>
-        <nav>
+        <nav class="nav-main">
             <a href="<?= base_url('/'); ?>" class="active">Dashboard</a>
             <a href="<?= base_url('/artikel'); ?>">Artikel</a>
             <a href="<?= base_url('/admin/artikel/add'); ?>">Tambah Artikel</a>

@@ -26,10 +26,10 @@ class User extends BaseController
 
     $session = session();
     $model = new UserModel();
-    $login = $model->where('username', $email)->first();
+    $login = $model->where('useremail', $email)->first();
     if ($login)
     {
-        $pass = $login['password']; // Assuming the password field is named 'password'
+        $pass = $login['userpassword']; // Assuming the password field is named 'password'
         if (is_array($pass)) {
             $pass = $pass['userpassword']; // Modify this according to your actual array structure
         }

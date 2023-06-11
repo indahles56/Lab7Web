@@ -38,6 +38,7 @@ $routes->get('/tos', 'Page::tos');
 $routes->get('/artikel', 'Artikel::index');
 $routes->get('/artikel/(:any)', 'Artikel::view/$1');
 $routes->get('/user/login', 'User::login');
+$routes->post('/user/dologin', 'User::login');
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('artikel', 'Artikel::admin_index');
     $routes->get('artikel/add', 'Artikel::add');
