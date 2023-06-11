@@ -168,5 +168,16 @@ Yang akan menampilkan seperti ini :
 ![image](https://github.com/indahles56/Lab7Web/assets/127643042/c1e3670c-6175-4dcc-a343-2d8c72be9ab0)
 
 
+### 13. Membuat Tampilan Pagination dan Pencarian
 
+#### Membuat Pagination
+Pagination merupakan proses yang digunakan untuk membatasi tampilan yang panjang dari data yang banyak pada sebuah website. Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi koden pada method admin_index.
+
+![Screenshot (595)](https://github.com/indahles56/Lab7Web/assets/127643042/f990036c-ed3f-46a1-a7b6-96d343ab4bce)
+
+
+#### Membuat Pencarian
+Pencarian data digunakan untuk memfilter data. Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin_index
+
+![Screenshot (594)](https://github.com/indahles56/Lab7Web/assets/127643042/8834a887-2c1e-4acd-b8a4-e3fd1489afc8)
 
