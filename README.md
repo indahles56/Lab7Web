@@ -181,3 +181,11 @@ Pencarian data digunakan untuk memfilter data. Untuk membuat pencarian data, buk
 
 ![Screenshot (594)](https://github.com/indahles56/Lab7Web/assets/127643042/8834a887-2c1e-4acd-b8a4-e3fd1489afc8)
 
+
+### 14. Upload File Gambar
+
+#### 1) Menambahkan kode pada method add ke dalam file Controller Artikel.
+#### 2) Kemudian menambahkan field input file pada file views/artikel/form_add.php.
+#### 3) Inilah tampilan menu tambah artikel setelah di tambahkan fitur upload file.
+
+![Screenshot (604)](https://github.com/indahles56/Lab7Web/assets/127643042/5ec166d1-fcc5-4d82-8399-b5ad25fbfdf3)
